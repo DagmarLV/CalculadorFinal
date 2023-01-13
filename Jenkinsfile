@@ -18,7 +18,7 @@ pipeline {
                         num1 = env.num1
                         num2 = env.num2
                     }
-                    sh 'python3 calculadora.py ${num1} ${num2}'
+                    sh 'python3 calculador.py ${num1} ${num2}'
                 }
             }
         }
