@@ -9,5 +9,12 @@ pipeline {
                 sh "python3 test_calculador.py"
             }
         }
+        stage("Pipeline Broken"){
+            steps {
+                sh "python3 calculador.py"
+                sh 6
+                sh 0
+            }
+        }
     }
 }
