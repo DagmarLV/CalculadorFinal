@@ -14,7 +14,7 @@ pipeline {
                 script {
                     def num1 = 2
                     def num2 = 0
-                    sh 'python3 calculadora.py ${num1} ${num2}'
+                    sh 'python3 calculador.py ${num1} ${num2}'
                 }
 
             }
