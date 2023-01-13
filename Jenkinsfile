@@ -11,9 +11,7 @@ pipeline {
         }
         stage("Pipeline Broken"){
             steps {
-                def num1 = 5
-                def num2 = 7
-                sh 'python3 calculador.py ${num1} ${num2}'
+                sh 'python3 calculador.py'
 
             }
         }
