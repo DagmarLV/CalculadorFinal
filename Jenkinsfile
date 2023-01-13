@@ -11,7 +11,11 @@ pipeline {
         }
         stage("Pipeline Broken"){
             steps {
-                sh 'python3 calculador.py'
+                script {
+                    def num1 = 2
+                    def num2 = 0
+                    sh 'python3 calculadora.py ${num1} ${num2}'
+                }
 
             }
         }
